@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+<title>2I2D SIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+a {
+  text-decoration: none !important;
+}
+
+h1,h2 {    font-family: 'Bebas Neue', sans-serif;}
+
+body,h3,h4,h5,h6 {    font-family: 'Overpass', sans-serif; font-family: 'Overpass Mono', monospace;}
+
+.mega-giant-text{font-size:128px!important}
+
+.bg{
+  background-image: url('img/circuit_jpg.jpg');
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+</style>
+
+<body>
+
+
+<!-- MENU POUR TELEPHONES -->
+<div id="myNav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+				<a href="#cours">Cours & Activités</a>
+				<a href="#miniproj">Mini-Projets</a>
+				<a href="#projfinal">Projet Final</a>
+				<a href="#logiciels">Logiciels</a>
+		</div>
+
+</div>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-wide w3-padding w3-border-bottom">
+    <a href="#main" class="w3-bar-item w3-button w3-hide-small w3-hide-medium"><b>2I2D</b> SIN</a>
+	<a href="#main" class="w3-bar-item w3-button w3-hide-large w3-large"><b>2I2D</b> SIN</a>
+    <!-- Onglets à droite cachés sur petit écran -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="#cours" class="w3-bar-item w3-button">Cours & Activités</a>
+      <a href="#miniproj" class="w3-bar-item w3-button">Mini-Projets</a>
+      <a href="#projfinal" class="w3-bar-item w3-button">Projet Final</a>
+      <a href="#logiciels" class="w3-bar-item w3-button">Logiciels</a>
+    </div>
+	<div class="w3-right w3-hide-large">
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	</div>
+  </div>
+</div>
+
+
+<div class="bg w3-text-grey w3-light-grey" id="main">
+<br>
+<br>
+<br>
+<br>
+<h1 class="w3-center mega-giant-text w3-hide-small w3-hide-medium">Système d'information et numérique</h1>
+<h1 class="w3-center mega-giant-text w3-hide-large">SIN</h1>
+<p class="w3-center w3-hide-large">Système d'information et numérique</p>
+
+<br>
+	
+<div class="w3-card w3-white">
+<div class="w3-content w3-text-grey">	
+	<h2 class="w3-text-dark-grey w3-padding-64 w3-margin-left w3-jumbo" id="cours"> Cours & Activités</h2>
+	
+	<!--CHAP 1-->
+	<button onclick="myFunction('chap1')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Chaîne d'information</h4><p class="w3-hide-medium w3-hide-large">Chaîne d'information</p></button>
+	<!--CHAP 1 CONTENT-->
+	<div id="chap1" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">	
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>2.4.1.Typologie des chaînes d’information
+		</br>2.4.2. Acquisition et restitution de l’information : Acquisition d’une grandeur physique (principe, démarches et méthodes, notions requises)
+		</br>3.4.1.Nature et représentation de l’information : Nature d’une information ; Représentation temporelle d’une information
+		</p>
+		
+		<!--LISTE CHAP 1-->
+					<h5>Cours :</h5>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1X3YRhT7qijxaAj0NEysT0hZtY6Rs6dY4/view?usp=sharing
+							" target="_blank">
+							Organisation fonctionnelle d'une chaîne d'information<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1JCugLrH9KDuDf780liZU__-dTQrrbjEQ/view?usp=sharing
+							" target="_blank">
+							Traiter : Le microcontrôleur Arduino<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1CegGpOFZXmHVpz6lJ4kv5pbd4yyKCEKU/view?usp=sharing
+							" target="_blank">
+							Acquérir : Nature des signaux<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/10xbZT5rykRZaQUHA7LxgGIX3opKjok4c/view?usp=sharing
+							" target="_blank">
+							Communiquer/Transmettre : Les liaisons de l'information<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h5>Activité(s) :</h5>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1FxN-ywJ-qSo2zLZjOZnbUsnhyk10K_wv/view?usp=sharing
+							" target="_blank">
+							Organisation fonctionnelle d'une chaîne d'information : Activité de déclenchement<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1BFfFMyz-Hl_1GHyMMzLMqIJqiQjp4tdA/view?usp=sharing
+							" target="_blank">
+							Nature des signaux : Activité<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1BnvzYzPTQI91Dr8i5Yy5q8BqZ0i9_GJ9/view?usp=sharing
+							" target="_blank">
+							Afficheur 7 segments, lecture d'une documentation technique : Activité<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h5>Activité(s) Pratique(s) :</h5>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1iBhnHwr6vq8aRR5HwzBDs8u71kRWXmXM/view?usp=sharing
+							" target="_blank">
+							Simulation d’un système simple Arduino/Tinkercad (Bouton poussoir et LED)<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1MUdDvekFBws0tvSINCVZnbtCF9z3iW6-/view?usp=sharing
+							" target="_blank">
+							Simulation : Le feu tricolore<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1qrFHeeC-6J5A4N9GSLQI6Mc2l9LBzZaT/view?usp=sharing
+							" target="_blank">
+							Principe de fonctionnement : L'écran LCD en liaison parallèle<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+			
+	</div>
+
+	<!--CHAP 2-->
+	<button onclick="myFunction('chap2')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Lois fondamentales de l'électricité</h4><p class="w3-hide-medium w3-hide-large">Lois fondamentales de l'électricité</p></button>
+	<!--CHAP 2 CONTENT-->
+	<div id="chap2" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>4.1.2. Outils de représentation schématique : Schéma électrique.
+		</p>
+		<!--LISTE CHAP 2-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1wKKVPmahHEcdqTal6CTC3RDeZ7o03DVe/view?usp=sharing
+							" target="_blank">
+							Loi d’Ohm, lois de Kirchhoff et résistances équivalentes<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1UqWSCuMeO3Nt_74sJo4InkB8a6gB33s6/view?usp=sharing
+							" target="_blank">
+							Les ponts diviseurs<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1VkNg28c90puUof9Er3suSEU1joCsmDKw/view?usp=sharing
+							" target="_blank">
+							Les transistors MOS en commutation<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1OndIBiUdwfATZzCbNZO8pSK_cdJJPhvN/view?usp=sharing
+							" target="_blank">
+							Applications des ponts diviseurs : Activité<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) Pratique(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1BlvFsojPC-VqbFCdW4PmwmETVjhpzU7g/view?usp=sharing
+							" target="_blank">
+							Compte rendu du câblage de l’application « Système d’éclairage autonome »<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1OsrrkadhY_stk53jB88nzdwsT7yodayZ/view?usp=sharing
+							" target="_blank">
+							Le transistor MOSFET, test du comportement par la simulation<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1AFu1QgmQFFX6OHN6rxbB_O-uiA8gDsqd/view?usp=sharing
+							" target="_blank">
+							Système d'éclairage autonome sans µC : le lampadaire de jardin<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 3-->
+	<button onclick="myFunction('chap3')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Liaisons de l'information</h4><p class="w3-hide-medium w3-hide-large">Liaisons de l'information</p></button>
+	<!--CHAP 3 CONTENT-->
+	<div id="chap3" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>2.4.3 Encodage de l’information: binaire, hexadécimal, ASCII.
+		</br>3.4.3.Inter-opérabilité des produits : Typologies des communications ; Liaisons séries: protocoles de communication, sens du flux de données, débit et rapidité de transmission ; Système temps-réel. (Interruptions)
+		</br>5.3.4.Composants de transmission de l’information  : Caractéristiques des bus de communication (I2C)
+		</p>
+		<!--LISTE CHAP 3-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/10GYXcP9lM449G48FeBndxhS2hCDBBw_-/view?usp=sharing
+							" target="_blank">
+							Liaisons séries et vitesse de transmission de l'information<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1sYvJ5eAsgZzv77gZcaKpcZVpJ7-NAqX7/view?usp=sharing
+							" target="_blank">
+							Liaison et protocole I2C<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/169jwno3oK2_3j78pCATKQT6ngPH2PjBx/view?usp=sharing
+							" target="_blank">
+							Liaison série et chronogrammes : Activité<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) Pratique(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/18n35LxK2QKOYYz4-gFbz2StCmkjCJBDl/view?usp=sharing
+							" target="_blank">
+							Serveur Node Red et Arduino (liaison sérielle)<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1fuyGXp6ieG2Snmbhx7iuPpmnoQwgrVHs/view?usp=sharing
+							" target="_blank">
+							Interruptions matérielles<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://www.google.com/url?q=https%3A%2F%2Fwiki.seeedstudio.com%2FGrove-Temperature_Sensor_V1.2%2F&sa=D&sntz=1&usg=AOvVaw3DbTn-LVEZbyq7yeW93FZZ
+							" target="_blank">
+							Grove temperature sensor - Seeed Wiki<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Fichier(s) Utile(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/uc?export=download&id=1Cjm_usX1k7YXebtZ-fUBkzrFoD1Di6Ad
+							" target="_blank">
+							Cde_eclairage.zip<i class="w3-hide-small fa fa-download w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 4-->
+	<button onclick="myFunction('chap4')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Traitement du signal</h4><p class="w3-hide-medium w3-hide-large">Traitement du signal</p></button>
+	<!--CHAP 4 CONTENT-->
+	<div id="chap4" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>2.4.2. Acquisition et restitution de l’information : Conditionnement d’une grandeur électrique (mise en forme, amplification, filtrage) ; Conversion Analogique/Numérique (CAN).
+		</br>2.4.3. Codage et traitement de l’information : Compression de données.
+		</br>3.4.1.Nature et représentation de l’information : Représentation fréquentielle d’une information.
+		</br>5.3.1.Capteurs, conditionneurs : Filtres passe-bas ; Amplificateur ; Convertisseurs analogique-numérique
+		</p>
+		<!--LISTE CHAP 4-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							
+							" target="_blank">
+							Traitement du signal : Synthèse <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1gnggB9EmGOIXFwPgz-4mzTzEcXNBliT4/view?usp=sharing
+							" target="_blank">
+							Dimensionner et réaliser un filtre <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) Pratique(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1QyKBgbdkPNJlwfs0nK-lSvumBenOxvR0/view?usp=sharing
+							" target="_blank">
+							Traitement d’une information analogique : le filtrage<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1MaS6aJBlvBRf2LDRjtJd_d1AI2kGWjMs/view?usp=sharing
+							" target="_blank">
+							Etude d'un Convertisseur Analogique Numérique 8bit<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Fichier(s) Utile(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/uc?export=download&id=1rz6FvvXxBxVTPtWhhr9W0T_MYzg9DyX7
+							" target="_blank">
+							fichiers_utiles (Etude d'un Convertisseur Analogique Numérique 8bit)<i class="w3-hide-small fa fa-download w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 5-->
+	<button onclick="myFunction('chap5')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Transmission de l'information</h4><p class="w3-hide-medium w3-hide-large">Transmission de l'information</p></button>
+	<!--CHAP 5 CONTENT-->
+	<div id="chap5" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>2.4.4. Typologie des transmissions ; Architecture d’un réseau informatique ; Architecture Client/Serveur.
+		</p>
+		<!--LISTE CHAP 5-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1d8naey1qmfsKKnRlRsEjqZjCPH1qqqGF/view?usp=sharing
+							" target="_blank">
+							Topologie des réseaux informatiques
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1uUlz0dAyVJ8_I88Y4ffPg6Nwyhju1RCK/view?usp=sharing
+							" target="_blank">
+							Modèles en couche des réseaux informatique
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1u9MHXmb52iPSQ7EWOl3JB7ccKbWbvSQX/view?usp=sharing
+							" target="_blank">
+							Topologie des réseaux informatiques : activité <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1Zeaf3AkZv1zUgUMxHTk_569q_61dCAxO/view?usp=sharing
+							" target="_blank">
+							Adresse IP, masque et sous-réseau  : activité <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) Pratique(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1F5AuFpNfMsgX4EOv3PcZM8CKtBMyh67f/view?usp=sharing
+							" target="_blank">
+							Simuler un réseau informatique (Cisco Packet Tracer)<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1TXI202xxFUNkN9DViDJms37O2D8nY38O/view?usp=sharing
+							" target="_blank">
+							Plan d'adressage et masque variable<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1z1dGF8G5BGjJB-u-8qAf-6SQj76T9icl/view?usp=sharing
+							" target="_blank">
+							Architecture Client/Serveur : du réseau au WEB<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Fichier(s) Utile(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1saT2RrSJdEppLXUXxAweo54t0XZBF2nz/view?usp=sharing
+							" target="_blank">
+							Plans FABLAB AGORA<i class="w3-hide-small fa fa-download w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/uc?export=download&id=1YZ8ML_0c5dttynhdNxSd8ukVPTj1DoQj
+							" target="_blank">
+							Fichiers_utiles (Uwamp + Notepad++)<i class="w3-hide-small fa fa-download w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 6-->
+	<button onclick="myFunction('chap6')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Développement WEB</h4><p class="w3-hide-medium w3-hide-large">Développement WEB</p></button>
+	<!--CHAP 6 CONTENT-->
+	<div id="chap6" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>4.3.5. Conception informationnelle des produits : codage dans un langage spécifique, règles d'écriture (organisation du code, commentaires, documentation, etc.), mise au point.
+		</p>
+		<!--LISTE CHAP 6-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1wirZmBsZsvff5oxU0PubY8-60RU_JvKe/view?usp=sharing
+							" target="_blank">
+							Le langage HTML
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1iMuHjOcEDrP8eFDVX8-efDhfBfKrGLVw/view?usp=sharing
+							" target="_blank">
+							Le langage CSS
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1h-YfJMyurtFyske0cBagAqKLl7lUfyTF/view?usp=sharing
+							" target="_blank">
+							Reproduire une page WEB : activité <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) Pratique(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1gbrPh9WnD1v6KdHTXtkjLycIvMtkCjLz/view?usp=sharing
+							" target="_blank">
+							Créer une première page HTML<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1mgxDEZBeMaJ_SHwZ_zM08TNvMSsorSCW/view?usp=sharing
+							" target="_blank">
+							Créer un site WEB en plusieurs pages HTML<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1J4I0-RRgW1Elx-LZ3czSrv9aA1oLTveF/view?usp=sharing
+							" target="_blank">
+							Mettre en page avec une feuille de style CSS<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1PJulruQC4JyVbiU966d6iWj1AZkiEkaQ/view?usp=sharing
+							" target="_blank">
+							Utiliser des ressources W3.CSS <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1QnmwcRNqyCKegQrtsF4rR_kIMWFDfU0S/view?usp=sharing
+							" target="_blank">
+							Formulaires, Methodes POST et GET en PHP <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 7-->
+	<button onclick="myFunction('chap7')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Stockage Numérique</h4><p class="w3-hide-medium w3-hide-large">Stockage Numérique</p></button>
+	<!--CHAP 7 CONTENT-->
+	<div id="chap7" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Au programme (BO) :</u>
+		</br>2.4.3. Codage et traitement de l’information
+		</br>4.2.3. Choix des constituants 
+		</p>
+		<!--LISTE CHAP 6-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1eymNRaxJSkcdN4kS9CHfyHvdvzJy0tC0/view?usp=sharing
+							" target="_blank">
+							Introduction au stockage numérique
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1M9io4LVxvUXa_VCnyzetpcaAojVmvQoe/view?usp=sharing
+							" target="_blank">
+							Exercices : stockage numérique <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 8-->
+	<button onclick="myFunction('chap8')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Systèmes combinatoires</h4><p class="w3-hide-medium w3-hide-large">Systèmes combinatoires</p></button>
+	<!--CHAP 8 CONTENT-->
+	<div id="chap8" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Objectif :</u>
+		</br>Identifier et comprendre le principe d'un système combinatoire
+		</p>
+		<!--LISTE CHAP 8-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1Si5KG3MYfEQ4yOM_kEp_uGUJPTw05YmX/view?usp=sharing
+							" target="_blank">
+							Fonctions logiques et algèbre de Boole
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1Vr4xqo6fHufcZ65DMbqpb4TJER0dJk6O/view?usp=sharing
+							" target="_blank">
+							Exercices : logique Booléenne <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+	
+	<!--CHAP 9-->
+	<button onclick="myFunction('chap9')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small">Systèmes séquentiels</h4><p class="w3-hide-medium w3-hide-large">Systèmes séquentiels</p></button>
+	<!--CHAP 9 CONTENT-->
+	<div id="chap9" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
+		
+		<p class="w3-small w3-text-grey">
+		<u>Objectif :</u>
+		</br>Identifier et comprendre le principe d'un système séquentiel
+		</p>
+		<!--LISTE CHAP 8-->
+					<h4>Cours :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1cPqSNPvTnMgNdWhvQd8JkR_FrwoTNyH-/view?usp=sharing
+							" target="_blank">
+							Système séquentiels et graphe d'état
+							<i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+					<h4>Activité(s) :</h4>
+					<ul class="w3-ul w3-border-bottom">
+							<li class="w3-hover-text-green"><a href="
+							https://drive.google.com/file/d/1ntbzKhnAMMYfDiSQEkfUGUp6t7qsYbKu/view?usp=sharing
+							" target="_blank">
+							Exercices : graphe d'état <i class="w3-hide-small fa fa-eye w3-right"></i>
+							</a></li>
+					</ul>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	
+
+</div>
+</div>
+
+</br>
+</br>
+	<!--Mini-Projets-->
+	
+<div class="w3-card w3-white">
+<div class="w3-content w3-text-grey">
+	
+	<h2 class="w3-text-dark-grey w3-padding-64 w3-margin-left w3-jumbo" id="miniproj"> Mini-Projets Formatifs</h2>
+
+	<div class="w3-row-padding ">
+			<div class="w3-quarter w3-margin-bottom">
+			  <img class="" src="img/pj1.png" alt="Proj1" style="width:100%">
+			  <h5  id="miniproj_view" class="w3-hide-small">Synthétiseur<br>innovant</h5>
+			  <p class="w3-hide-medium w3-hide-large">Synthétiseur innovant<br>
+			  <a class="w3-border-bottom w3-center" style="color:#8faadc" href="https://drive.google.com/file/d/1KRM8t2W241gZnV2wbwBsl1JZLcB_bU0b/view" target="_blank">Fiche Projet (PDF)</a>			
+			  </p>
+			  <p><a href="#miniproj_view"><button class="w3-hide-small w3-button w3-light-grey w3-block tablink" onclick="openLink(event, 'pj1')">En savoir plus</button></a></p>
+			</div>
+			<div class="w3-quarter w3-margin-bottom">
+			  <img class="" src="img/pj2.png" alt="Proj2" style="width:100%">
+			  <h5 class="w3-hide-small">Eclairage<br>autonome</h5>
+			  <p class="w3-hide-medium w3-hide-large">Eclairage autonome<br>
+			  <a class="w3-border-bottom w3-center" style="color:#f4b083" href="https://drive.google.com/file/d/12fDom-Tw7KDggHmWRb6fV-aQo0JuwZ1s/view" target="_blank">Fiche Etude (PDF)</a>
+			  <br><a class="w3-border-bottom w3-center" style="color:#f4b083" href="https://drive.google.com/uc?export=download&id=1vmUc9efrrgcpkrt4owb0VHJonept1K2d" target="_blank">Fiche Etude (DOCX)</a>		
+			  </p>
+			  <p><a href="#miniproj_view"><button class="w3-hide-small w3-button w3-light-grey w3-block tablink" onclick="openLink(event, 'pj2')">En savoir plus</button></a></p>
+			</div>
+			<div class="w3-quarter w3-margin-bottom">
+			  <img class="" src="img/pj3.png" alt="Proj3" style="width:100%">
+			  <h5 class="w3-hide-small">Chauffage<br>écologique</h5>
+			  <p class="w3-hide-medium w3-hide-large">Chauffage écologique<br>
+			  <a class="w3-border-bottom w3-center" style="color:#a9d18e" href="https://drive.google.com/file/d/1MRb_52lDyXVC8nhBbYs6TlacT3Wa1LTv/view" target="_blank">Conc. Préliminaire (PDF)</a>
+			  <br>
+			  <a class="w3-border-bottom w3-center" style="color:#a9d18e" href="https://drive.google.com/file/d/1aM2TKQ-um3JtiGjvGQfiMtRUeUh-5aKy/view" target="_blank">Conc. Détaillée (PDF)</a>		
+			  </p>
+			  <p><a href="#miniproj_view"><button class="w3-hide-small w3-button w3-light-grey w3-block tablink" onclick="openLink(event, 'pj3')">En savoir plus</button></a></p>
+			</div>
+			<div class="w3-quarter w3-margin-bottom">
+			  <img class="" src="img/pj4.png" alt="Proj4" style="width:100%">
+			  <h5 class="w3-hide-small">Portfolio<br>WEB</h5>
+			  <p class="w3-hide-medium w3-hide-large">Portfolio WEB<br>
+			  <a class="w3-border-bottom w3-center" style="color:#ffd966" href="https://www.w3schools.com/w3css/w3css_templates.asp" target="_blank">Templates W3CSS</a>
+			  </p>
+			  <p><a href="#miniproj_view"><button class="w3-hide-small w3-button w3-light-grey w3-block tablink" onclick="openLink(event, 'pj4')">En savoir plus</button></a></p>
+			</div>
+	</div>
+ 
+	<!--Affichage des détails des projets (pas sur petit écran)-->
+	<div class="w3-hide-small">
+	 
+		<div id="pj1" class="w3-padding-16 w3-container tab_pj w3-animate-opacity" style="display:none">
+				<div class="w3-row">
+						<div class="w3-twothird" style="display: flex;align-items: center;justify-content: center; height:400px;">
+							<img class="" src="img/montage_synth.png" alt="1" width="75%">
+							<!--<iframe width="100%" height="100%" style="min-height : 453px;" src="https://www.tinkercad.com/embed/d3LJK70oA4x?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+						</div>
+						<div class="w3-third w3-container">
+							<p width="95%"><h3 style="color:#8faadc">Synthétiseur innovant</h3>
+							Comment rendre accessible un instrument de musique à un publique non-initié ?
+							<br>
+							<h5>Objectif</h5>
+							Réaliser un instrument de musique électronique qui ne permet à l'utilisateur que de jouer des notes
+							de la même gamme (gamme pentatonique).
+							<br>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#8faadc" href="https://drive.google.com/file/d/1KRM8t2W241gZnV2wbwBsl1JZLcB_bU0b/view" target="_blank">Fiche Projet</a>
+							</p>
+						</div>
+				</div>
+		</div>	  
+		<div id="pj2" class="w3-padding-16 w3-container tab_pj w3-animate-opacity" style="display:none">
+				<div class="w3-row">
+						<div class="w3-twothird" style="display: flex;align-items: center;justify-content: center; height:400px;">
+							<img class="" src="img/montage_ldr.png" alt="1" width="50%">
+							<!--<iframe width="100%" height="100%" style="min-height : 453px;" src="https://www.tinkercad.com/embed/ft7YWnewMDq?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+						</div>
+						<div class="w3-third w3-container">
+							<p width="95%"><h3 style="color:#f4b083">Eclairage autonome</h3>
+							Comment automatiser l'éclairage d'une ville à la tombée de la nuit ?
+							<br>
+							<h5>Objectif</h5>
+							Réaliser un système d'éclairage autonome en utilisant un capteur de luminosité (LDR).
+							<br>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#f4b083" href="https://drive.google.com/file/d/12fDom-Tw7KDggHmWRb6fV-aQo0JuwZ1s/view" target="_blank">Fiche Etude (PDF)</a>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#f4b083" href="https://drive.google.com/uc?export=download&id=1vmUc9efrrgcpkrt4owb0VHJonept1K2d" target="_blank">Fiche Etude (DOCX)</a>
+							</p>
+						</div>
+				</div>
+		</div>
+				  
+		<div id="pj3" class="w3-padding-16 w3-container tab_pj w3-animate-opacity" style="display:none">
+				<div class="w3-row">
+						<div class="w3-twothird" style="display: flex;align-items: center;justify-content: center; height:400px;">
+							<img class="" src="img/montage_rasp.png" alt="1" width="70%">
+							<!--<iframe width="100%" height="100%" style="min-height : 400px;" src="https://www.tinkercad.com/embed/ft7YWnewMDq?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+							-->
+						</div>
+						<div class="w3-third w3-container">
+							<p width="95%"><h3 style="color:#a9d18e">Chauffage écologique</h3>
+							Comment rendre un système de chauffage écologique ?
+							<br>
+							<h5>Objectif</h5>
+							Automatiser le fonctionnement d'un poêle à granulés avec une carte Arduino et rendre le système connecté grace à Nodered sur une Raspberry Pi.
+							<br>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#a9d18e" href="https://drive.google.com/file/d/1MRb_52lDyXVC8nhBbYs6TlacT3Wa1LTv/view" target="_blank">Conc. Préliminaire (PDF)</a>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#a9d18e" href="https://drive.google.com/file/d/1aM2TKQ-um3JtiGjvGQfiMtRUeUh-5aKy/view" target="_blank">Conc. Détaillée (PDF)</a>
+							</p>
+						</div>
+				</div>	
+		</div>
+				  
+		<div id="pj4" class="w3-padding-16 w3-container tab_pj w3-animate-opacity" style="display:none">
+				<div class="w3-row">
+						<div class="w3-twothird w3-container">
+							<img class="mySlides" src="img/portfolio.png" alt="portfolio1" width="100%" height="400px">
+							<!--<div class="w3-content w3-border w3-section" width="100%" height="100%" style="min-height : 453px;">
+							  <img class="mySlides" src="img/portfolio1.png" alt="portfolio1" width="100%" height="453px">
+							  <img class="mySlides" src="img/portfolio2.png" alt="portfolio1" width="100%" height="453px">
+							  <img class="mySlides" src="img/portfolio1.png" alt="portfolio1" width="100%" height="453px">
+							</div>-->
+						</div>
+						<div class="w3-third w3-container">
+							<p width="95%"><h3 style="color:#ffd966">Portfolio WEB</h3>
+							Comment mettre en valeur mon profil auprès d'un recruteur ?
+							<br>
+							<h5>Objectif</h5>
+							Réaliser un portfolio WEB reprenant vos projets scolaires et/ou personnels afin de promouvoir votre profil en vue de votre orientation.
+							<br>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#ffd966" href="https://www.w3schools.com/w3css/w3css_templates.asp" target="_blank">Templates W3CSS</a>
+							<br>
+							<a class="w3-button w3-block w3-text-white" style="background-color:#ffd966" >Portfolio d'élèves</a>
+							</p>
+						</div>
+				</div>	
+		</div>
+		
+			
+	</div>
+ 
+  <br>
+
+</div>
+</div>
+
+</br>
+</br>
+	<!--PROJET FINAL-->
+	
+<div class="w3-card w3-white">
+<div class="w3-content w3-text-grey">
+	
+	<h2 class="w3-text-dark-grey w3-padding-64 w3-margin-left w3-jumbo" id="projfinal"> Projet Final</h2>
+	<div class="w3-container w3-center">
+	<img src="img/plan.png" class="w3-opacity-min" alt="Proj_plan" style="width:90%">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</div>
+</div>
+
+</br>
+</br>
+	<!--LOGICIELS-->
+	
+<div class="w3-card w3-white">
+<div class="w3-content w3-text-grey">
+
+	<h2 class="w3-text-dark-grey w3-padding-64 w3-margin-left w3-jumbo" id="logiciels"> Logiciels</h2>
+
+	<!--Sur petit écran, pas de logiciels (car inutile sur téléphone)-->	
+	<div class="">	
+		<div class="w3-row-padding w3-section w3-stretch">
+		  <div class="w3-col w3-opacity-min w3-center" style="width:20%">
+			<img src="img/log_gantt.png" style="width:75% ; height:75%">
+			<a href="https://drive.google.com/uc?export=download&id=15k8mhcMurAGBhkF8bIc_Jj7xVQqjiccr"><h5 class="w3-hide-small w3-hover-text-yellow">Gantt<br>Project</h5></a>
+		  </div>
+		  <div class="w3-col w3-opacity-min w3-center" style="width:20%">
+			<img src="img/log_arduino.png" style="width:75% ; height:75%">
+			<a href="https://drive.google.com/uc?export=download&id=1QLxflZDr2cWrCfVR_PKHn5R9SeqL2Zu9"><h5 class="w3-hide-small w3-hover-text-blue">Arduino<br>IDE</h5></a>
+		  </div>
+		  <div class="w3-col w3-opacity-min w3-center" style="width:20%">
+			<img src="img/log_notepadd.png" style="width:75% ; height:75%">
+			<a href="https://drive.google.com/uc?export=download&id=138YZdF2Wa7YA9e9CvdUlGNvicPHA_URi"><h5 class="w3-hide-small w3-hover-text-green">Notepad<br>++</h5></a>
+		  </div>
+		  <div class="w3-col w3-opacity-min w3-center" style="width:20%">
+			<img src="img/log_nodered.png" style="width:75% ; height:75%">
+			<a href="https://drive.google.com/uc?export=download&id=1AS2M79EQZXAfd79FfaHhpFVwh4pis2PL"><h5 class="w3-hide-small w3-hover-text-red">Nodered<br>Desktop</h5></a>
+		  </div>
+		  <div class="w3-col w3-opacity-min w3-center" style="width:20%">
+			<img src="img/log_py.png" style="width:75% ; height:75%">
+			<a href="https://drive.google.com/uc?export=download&id=1YeheYu6khk-8kedlVXrey6-w9xlNDQnh"><h5 class="w3-hide-small w3-hover-text-blue">Winpython<br>IDE</h5></a>
+		  </div>
+		</div>
+	</div>
+
+<br><br>
+	<div class="w3-hide-medium w3-hide-large w3-red w3-margin">
+	<p class="w3-center w3-margin w3-padding"><b>Ces logiciels sont uniquement compatibles avec un ordinateur doté d'un système d'exploitation Windows et ne peuvent pas être installés sur un smarpthone ou une tablette.</b></p>
+	</div>
+<br><br>
+
+</div>
+</div>
+
+</br>
+</br>
+	
+</div>
+
+<!-- Footer -->
+			<section class="w3-footer w3-center w3-padding-64 w3-border-top w3-black">
+				<p>MAJ 2022<br><a href="mailto:timothee.capaldi@monlycee.net" class="w3-text-light-grey w3-hover-text-green">timothee.capaldi@monlycee.net</a></p>
+			</section>
+			
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+function myFunction(id) {
+  var x = document.getElementById(id);
+  /*var ch1 = document.getElementById('chap1');
+  var ch2 = document.getElementById('chap2');
+  var ch3 = document.getElementById('chap3');
+  var ch4 = document.getElementById('chap4');
+  var ch5 = document.getElementById('chap5');*/
+  
+  if (x.className.indexOf("w3-show") == -1) {
+    /*ch1.className = x.className.replace(" w3-show", "");
+	ch2.className = x.className.replace(" w3-show", "");
+	ch3.className = x.className.replace(" w3-show", "");
+	ch4.className = x.className.replace(" w3-show", "");
+	ch5.className = x.className.replace(" w3-show", "");*/
+	
+	x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-border-gray", "w3-border-green");
+	x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-text-gray", "w3-text-green");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-border-green", "w3-border-gray");
+	x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-text-green", "w3-text-gray");
+  }
+}
+
+function openLink(evt, tabName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tab_pj");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-opacity", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " w3-opacity";
+}
+
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+
+</script>
+
+
+</body>
+</html>
