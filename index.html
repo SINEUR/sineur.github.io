@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -20,6 +21,13 @@ a {
 h1,h2 {    font-family: 'Bebas Neue', sans-serif;}
 
 body,h3,h4,h5,h6 {    font-family: 'Overpass', sans-serif; font-family: 'Overpass Mono', monospace;}
+
+.icon_rot {
+    transition: transform 0.2s ease-in-out; /* Smooth transition for icon rotation */
+}
+.rotate-up {
+    transform: rotate(180deg);
+}
 
 .mega-giant-text{font-size:128px!important}
 
@@ -94,6 +102,8 @@ html {
   }
 }
 
+
+
 </style>
 
 <body>
@@ -148,8 +158,8 @@ html {
 	<h2 class="w3-text-dark-grey w3-padding-64 w3-margin-left w3-jumbo" id="cours"> Cours & Activités</h2>
 	
 	<!--CHAP 1-->
-	<button onclick="myFunction('chap1')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Chaîne d'information</h4><p class="w3-hide-medium w3-hide-large">Chaîne d'information</p></button>
+	<button onclick="myFunction('chap1', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Chaîne d'information</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Chaîne d'information</p></button>
 	<!--CHAP 1 CONTENT-->
 	<div id="chap1" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">	
 		<p class="w3-small w3-text-grey">
@@ -223,8 +233,8 @@ html {
 	</div>
 
 	<!--CHAP 2-->
-	<button onclick="myFunction('chap2')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Lois fondamentales de l'électricité</h4><p class="w3-hide-medium w3-hide-large">Lois de l'électricité</p></button>
+	<button onclick="myFunction('chap2', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Lois fondamentales de l'électricité</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Lois de l'électricité</p></button>
 	<!--CHAP 2 CONTENT-->
 	<div id="chap2" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -280,8 +290,8 @@ html {
 	</div>
 	
 	<!--CHAP 3-->
-	<button onclick="myFunction('chap3')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Liaisons de l'information</h4><p class="w3-hide-medium w3-hide-large">Liaisons de l'information</p></button>
+	<button onclick="myFunction('chap3', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Liaisons de l'information</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Liaisons de l'information</p></button>
 	<!--CHAP 3 CONTENT-->
 	<div id="chap3" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -342,8 +352,8 @@ html {
 	</div>
 	
 	<!--CHAP 4-->
-	<button onclick="myFunction('chap4')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Traitement du signal</h4><p class="w3-hide-medium w3-hide-large">Traitement du signal</p></button>
+	<button onclick="myFunction('chap4', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Traitement du signal</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Traitement du signal</p></button>
 	<!--CHAP 4 CONTENT-->
 	<div id="chap4" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -395,8 +405,8 @@ html {
 	</div>
 	
 	<!--CHAP 5-->
-	<button onclick="myFunction('chap5')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Transmission de l'information</h4><p class="w3-hide-medium w3-hide-large">Transmission de l'information</p></button>
+	<button onclick="myFunction('chap5', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Transmission de l'information</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Transmission de l'information</p></button>
 	<!--CHAP 5 CONTENT-->
 	<div id="chap5" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -467,8 +477,8 @@ html {
 	</div>
 	
 	<!--CHAP 6-->
-	<button onclick="myFunction('chap6')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Développement WEB</h4><p class="w3-hide-medium w3-hide-large">Développement WEB</p></button>
+	<button onclick="myFunction('chap6', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Développement WEB</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Développement WEB</p></button>
 	<!--CHAP 6 CONTENT-->
 	<div id="chap6" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -531,8 +541,8 @@ html {
 	</div>
 	
 	<!--CHAP 7-->
-	<button onclick="myFunction('chap7')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Stockage Numérique</h4><p class="w3-hide-medium w3-hide-large">Stockage Numérique</p></button>
+	<button onclick="myFunction('chap7', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Stockage Numérique</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Stockage Numérique</p></button>
 	<!--CHAP 7 CONTENT-->
 	<div id="chap7" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -562,8 +572,8 @@ html {
 	</div>
 	
 	<!--CHAP 8-->
-	<button onclick="myFunction('chap8')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Systèmes combinatoires</h4><p class="w3-hide-medium w3-hide-large">Systèmes combinatoires</p></button>
+	<button onclick="myFunction('chap8', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Systèmes combinatoires</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Systèmes combinatoires</p></button>
 	<!--CHAP 8 CONTENT-->
 	<div id="chap8" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -592,8 +602,8 @@ html {
 	</div>
 	
 	<!--CHAP 9-->
-	<button onclick="myFunction('chap9')" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
-	<h4 class="w3-hide-small">Systèmes séquentiels</h4><p class="w3-hide-medium w3-hide-large">Systèmes séquentiels</p></button>
+	<button onclick="myFunction('chap9', this)" class="w3-button w3-block w3-hover-white w3-large w3-padding-large w3-text-gray w3-hover-text-green w3-border-bottom w3-border-gray w3-left-align">
+	<h4 class="w3-hide-small"><i class="w3-right icon_rot fa fa-angle-down"></i> Systèmes séquentiels</h4><p class="w3-hide-medium w3-hide-large"><i class="icon_rot fa fa-angle-down"></i> Systèmes séquentiels</p></button>
 	<!--CHAP 9 CONTENT-->
 	<div id="chap9" class="w3-hide w3-container w3-margin w3-leftbar w3-border-green">
 		
@@ -827,7 +837,7 @@ html {
 		  </div>
 		  <div class="w3-col w3-opacity-min w3-center" style="width:20%">
 			<img src="img/log_py.png" style="width:75% ; height:75%">
-			<a href="https://drive.google.com/uc?export=download&id=1YeheYu6khk-8kedlVXrey6-w9xlNDQnh"><h5 class="w3-hide-small w3-hover-text-blue">Winpython<br>IDE</h5></a>
+			<a href="https://drive.google.com/uc?export=download&id=1CFAudFP8dy95lylmYk8i8yqTjBXKkPO5"><h5 class="w3-hide-small w3-hover-text-blue">Thonny<br>Python</h5></a>
 		  </div>
 		</div>
 	</div>
@@ -869,33 +879,32 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
-function myFunction(id) {
-  var x = document.getElementById(id);
-  /*var ch1 = document.getElementById('chap1');
-  var ch2 = document.getElementById('chap2');
-  var ch3 = document.getElementById('chap3');
-  var ch4 = document.getElementById('chap4');
-  var ch5 = document.getElementById('chap5');*/
-  
-  if (x.className.indexOf("w3-show") == -1) {
-    /*ch1.className = x.className.replace(" w3-show", "");
-	ch2.className = x.className.replace(" w3-show", "");
-	ch3.className = x.className.replace(" w3-show", "");
-	ch4.className = x.className.replace(" w3-show", "");
-	ch5.className = x.className.replace(" w3-show", "");*/
-	
-	x.className += " w3-show";
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace("w3-border-gray", "w3-border-green");
-	x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace("w3-text-gray", "w3-text-green");
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace("w3-border-green", "w3-border-gray");
-	x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace("w3-text-green", "w3-text-gray");
-  }
+function myFunction(id, button) {
+    var x = document.getElementById(id);
+    var icon = button.querySelector('.icon_rot');
+
+	// Toggle icon class for rotation
+    icon.classList.toggle('rotate-up');
+
+    // Toggle icon class and rotate smoothly
+    /*if (icon.classList.contains('fa-angle-down')) {
+        icon.classList.remove('fa-angle-down');
+        icon.classList.add('fa-angle-up');
+    } else {
+        icon.classList.remove('fa-angle-up');
+        icon.classList.add('fa-angle-down');
+    }*/
+
+    // Toggle accordion content and its styling
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className = x.previousElementSibling.className.replace("w3-border-gray", "w3-border-green");
+        x.previousElementSibling.className = x.previousElementSibling.className.replace("w3-text-gray", "w3-text-green");
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = x.previousElementSibling.className.replace("w3-border-green", "w3-border-gray");
+        x.previousElementSibling.className = x.previousElementSibling.className.replace("w3-text-green", "w3-text-gray");
+    }
 }
 
 function openLink(evt, tabName) {
